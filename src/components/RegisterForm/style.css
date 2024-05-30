@@ -1,0 +1,10 @@
+.register-form button[type="submit"] {
+    background-color: #2563eb; /* Darker Blue */
+  }
+  
+  .register-form button[type="button"] {
+    background-color: #d1d5db; /* Light Gray */
+    color: #333;
+    margin-top: 10px;
+  }
+  

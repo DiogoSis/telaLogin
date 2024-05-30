@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState } from 'react'
+import './style.css'
 
-const RegisterForm = () => {
+const RegisterForm = ({ onBack }) => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [idade, setIdade] = useState('');
@@ -39,6 +40,7 @@ const RegisterForm = () => {
         <input type="password" value={confirmPassword} onChange={(e) => setConfirmPassword(e.target.value)} required />
       </div>
       <button type="submit">Cadastrar</button>
+      <button type='button' onClick={onBack} >Voltar</button>
     </form>
   );
 };

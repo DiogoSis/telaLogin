@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
+import "./style.css"
 
-const LoginForm = () => {
+const LoginForm = ({ onBack }) => {
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
 
@@ -20,6 +21,7 @@ const LoginForm = () => {
             <input type="password" value={password} onChange={(e) => setPassword(e.target.password)} />
         </div>
         <button type='submit'>Entrar</button>
+        <button type='button' onClick={onBack} >Voltar</button>
     </form>
   )
 }

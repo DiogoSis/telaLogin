@@ -1,0 +1,14 @@
+.header {
+    text-align: center;
+  }
+  
+  .header h1 {
+    color: #ffffff;
+    margin-bottom: 40px;
+  }
+  
+  .header button {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
